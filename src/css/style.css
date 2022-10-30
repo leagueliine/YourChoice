@@ -1,6 +1,6 @@
 body {
   font-family: 'Outfit', sans-serif;
-  background-image: url(../img/fundo-site.png);
+  background-image: url(../img/fundoanimado7.gif);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -19,8 +19,12 @@ body {
 }
 
 .cabecalho img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+}
+
+.cabecalho .mon {
+  color: violet;
 }
 
 .pokemon-slider {
@@ -33,7 +37,7 @@ body {
 
 .pokemon-list {
   width: 310px;
-  height: 520px;
+  height: 490px;
   position: relative;
 }
 
@@ -139,6 +143,11 @@ body {
   font-size: 14px;
   padding: 12px;
   text-align: justify;
-  max-height: 115px;
+  max-height: 94px;
   overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.cartao .descricao .texto::-webkit-scrollbar {
+  width: 5px;
 }
