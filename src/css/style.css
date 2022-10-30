@@ -23,10 +23,6 @@ body {
   height: 30px;
 }
 
-.cabecalho .mon {
-  color: violet;
-}
-
 .pokemon-slider {
   display: flex;
   align-items: center;
