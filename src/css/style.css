@@ -1,9 +1,10 @@
 body {
   font-family: 'Outfit', sans-serif;
-  background-image: url(../img/fundoanimado7.gif);
+  background-image: url(../img/eleicao/background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  max-height: 100vh;
 }
 
 .cabecalho {
@@ -11,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .cabecalho .titulo {
@@ -27,8 +28,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
-  margin: 20px 0;
+  gap: 60px;
+  margin: 10px 0;
 }
 
 .pokemon-list {
@@ -48,7 +49,7 @@ body {
   border: 0;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .btn-seta.btn-esq {
@@ -71,6 +72,7 @@ body {
   border-radius: 10px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   transition: opacity 0.3s ease-in-out;
+  border-radius: 40px;
 }
 
 .cartao.selecionado {
@@ -79,16 +81,13 @@ body {
 }
 
 .fundo1 {
-  background: url(../img/fundo-card-1.jpg) no-repeat;
+  background: url(../img/eleicao/fundobolsoaro.jpg) no-repeat;
 }
 
 .fundo2 {
-  background: url(../img/fundo-card-2.jpg) no-repeat;
+  background: url(../img/eleicao/fundolula.jpg) no-repeat;
 }
 
-.fundo3 {
-  background: url(../img/fundo-card-3.jpg) no-repeat;
-}
 
 .cartao .informacoes {
   background-color: rgba(179, 177, 175, 0.7);
@@ -116,10 +115,20 @@ body {
   text-align: center;
 }
 
-.cartao .imagem-pokemon {
+.cartao .imagem-pokemon1 {
   max-width: 100%;
+  display: flex;
+  align-items: center;
   max-height: 280px;
   padding: 20px;
+}
+
+.cartao .imagem-pokemon2 {
+  max-width: 80%;
+  display: flex;
+  max-height: 280px;
+  padding-left: 40px;
+
 }
 
 .cartao .descricao {
@@ -146,4 +155,30 @@ body {
 
 .cartao .descricao .texto::-webkit-scrollbar {
   width: 5px;
+}
+
+.se-fodeu {
+  background-color: crimson;
+  color: white;
+  padding: 15px 32px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 600px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.se-fodeu:hover {
+  background-color: #400000;
+  color: silver;
+  text-shadow:
+    4px 4px 1px #300000,
+    4px 6px 1px #400000,
+    4px 8px 1px #500000,
+
 }
